@@ -71,3 +71,17 @@ if (document.addEventListener) {
 } else {
   console.log('failed to register init event');
 }
+
+// ask the user to refresh an updated version of the cached page
+if (window.applicationCache) {
+  window.applicationCache.addEventListener('updateready', function(e) {
+    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+      window.applicationCache.swapCache();
+      if (confirm('A new version of this app is available. Load it?')) {
+        window.location.reload();
+      }
+    }
+  }, false);
+} else {
+  console.log('failed to initialize app cache');
+}
