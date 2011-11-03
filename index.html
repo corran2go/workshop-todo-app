@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="script.js" type="text/javascript"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="appView">
+      <h4>Todos</h4>
+      <div id="todoList">
+      </div>
+      <hr/>
+      <form onsubmit="App.addTodo(); return false;">
+        <input type="text" id="todo" name="todo" placeholder="Was ist zu tun?" />
+        <input type="submit" value="Todo hinzufügen" />
+      </form>
+    </div>
+  </body>
+</html>

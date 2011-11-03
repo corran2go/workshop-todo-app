@@ -1,0 +1,15 @@
+body {
+	font: 1.5em Arial, Verdana, Helvetica, sans serif;
+}
+
+#appView {
+  width: 50%;
+}
+
+.todoListElement:nth-child(odd) {
+  background: #eee;
+}
+
+.todoListElement:nth-child(even) {
+  background: #ddd;
+}
