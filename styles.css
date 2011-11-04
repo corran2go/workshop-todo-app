@@ -6,6 +6,14 @@ body {
   width: 50%;
 }
 
+#todo {
+  font-size: 0.9em;
+}
+
+#submit {
+  font-size: 0.9em;
+}
+
 .todoListElement:nth-child(odd) {
   background: #eee;
 }
